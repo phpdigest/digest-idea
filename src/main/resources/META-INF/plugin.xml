@@ -1,0 +1,30 @@
+<idea-plugin version="2">
+    <id>com.pronskiy.digest-foldings</id>
+    <name>Digest Foldings</name>
+    <version>1.0</version>
+    <vendor email="roman@pronskiy.com" url="https://pronskiy.com">pronskiy.com</vendor>
+
+    <description><![CDATA[
+    Folding html tags.
+    ]]></description>
+
+    <change-notes><![CDATA[
+    ]]>
+    </change-notes>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products -->
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+<!--    <idea-version since-build="143.2370.31"/>-->
+    <idea-version since-build="211"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <lang.foldingBuilder language="HTML"
+                             implementationClass="com.pronskiy.html.folding.FoldingBuilder"/>
+    </extensions>
+
+</idea-plugin>
